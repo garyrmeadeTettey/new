@@ -124,7 +124,7 @@ const CourseToggle = () => {
   <AccordionItem value="item-1">
     <AccordionTrigger className="w-full text-xl text-center hover:bg-gray-300-600 dark:hover:bg-gray-900 py-3 pl-3 ml-3">Life Skills</AccordionTrigger>
     <AccordionContent>
-        <button className="w-full text-xl hover:bg-gray-300-600 dark:hover:bg-gray-900 py-3 ml-3">Life Skills</button>
+        <button className="w-full text-xl hover:bg-gray-300-600 dark:hover:bg-gray-900 py-3 ml-3">Stress Management</button>
     </AccordionContent>
     <AccordionContent>
         <button className="w-full text-xl hover:bg-gray-300-600 dark:hover:bg-gray-900 py-3 ml-3">Life Skills</button>
