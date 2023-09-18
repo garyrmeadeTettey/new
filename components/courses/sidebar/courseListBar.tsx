@@ -127,10 +127,10 @@ const CourseToggle = () => {
         <button className="w-full text-xl hover:bg-gray-300-600 dark:hover:bg-gray-900 py-3 ml-3">Stress Management</button>
     </AccordionContent>
     <AccordionContent>
-        <button className="w-full text-xl hover:bg-gray-300-600 dark:hover:bg-gray-900 py-3 ml-3">Life Skills</button>
+        <button className="w-full text-xl hover:bg-gray-300-600 dark:hover:bg-gray-900 py-3 ml-3">Emotional Intelligence</button>
     </AccordionContent>
     <AccordionContent>
-        <button className="w-full text-xl hover:bg-gray-300-600 dark:hover:bg-gray-900 py-3 ml-3">Life Skills</button>
+        <button className="w-full text-xl hover:bg-gray-300-600 dark:hover:bg-gray-900 py-3 ml-3">Critical Thinking</button>
     </AccordionContent>
     <AccordionContent>
         <button className="w-full text-xl hover:bg-gray-300-600 dark:hover:bg-gray-900 py-3 ml-3">Life Skills</button>
