@@ -10,7 +10,7 @@ import {
   LogoIcon,
   UsersIcon,
   VideosIcon,
-} from "../../icons";
+} from "../icons";
 import { Button } from "@/components/ui/button";
 
 interface MenuItem {
@@ -21,12 +21,12 @@ interface MenuItem {
 }
 
 const menuItems: MenuItem[] = [
-  { id: 1, label: "UNIT 1", unitlabel: "Right triangles & trigonometry", link: "/courses/units/math/algebra" },
-  { id: 2, label: "UNIT 2", unitlabel: "Trigonometric functions ", link: "../LearningUnits/tutorial" },
-  { id: 3, label: "UNIT 3", unitlabel: "Non-right triangles & trigonometry", link: "../LearningUnits/posts" },
-  { id: 4, label: "UNIT 4", unitlabel: "Trigonometric equations & identities", link: "../LearningUnits/tutorial" },
-  // { id: 5, label: "UNIT 5", unitlabel: "Inverse trigonometric functions", link: "../LearningUnits/tutorial" },
-  // { id: 6, label: "UNIT 6", unitlabel: "Using trigonometric identities", link: "../LearningUnits/tutorial" },
+  { id: 1, label: "UNIT 1", unitlabel: "High School Chemistry", link: "/courses/units/math/algebra" },
+  { id: 2, label: "UNIT 2", unitlabel: "High School Physics", link: "/courses/science/Physics" },
+  { id: 3, label: "UNIT 3", unitlabel: "Advanced Programme Chemistry", link: "../LearningUnits/posts" },
+  { id: 4, label: "UNIT 4", unitlabel: "Advanced Programme Physics", link: "../LearningUnits/tutorial" },
+  { id: 5, label: "UNIT 5", unitlabel: "University Foundation Physics", link: "../LearningUnits/tutorial" },
+  { id: 6, label: "UNIT 6", unitlabel: "UNiversity Fondation Chemistry", link: "../LearningUnits/tutorial" },
 ];
 
 const Side: React.FC = () => {
@@ -92,7 +92,7 @@ const Side: React.FC = () => {
                     hidden: toggleCollapse,
                   })}
                 >
-                  Trigonometry
+                  Science Pathway
                 </span>
               </h1>
             </div>
