@@ -21,12 +21,12 @@ interface MenuItem {
 }
 
 const menuItems: MenuItem[] = [
-  { id: 1, label: "UNIT 1", unitlabel: "Right triangles & trigonometry", link: "/courses/units/math/algebra" },
-  { id: 2, label: "UNIT 2", unitlabel: "Trigonometric functions ", link: "../LearningUnits/tutorial" },
-  { id: 3, label: "UNIT 3", unitlabel: "Non-right triangles & trigonometry", link: "../LearningUnits/posts" },
-  { id: 4, label: "UNIT 4", unitlabel: "Trigonometric equations & identities", link: "../LearningUnits/tutorial" },
-  // { id: 5, label: "UNIT 5", unitlabel: "Inverse trigonometric functions", link: "../LearningUnits/tutorial" },
-  // { id: 6, label: "UNIT 6", unitlabel: "Using trigonometric identities", link: "../LearningUnits/tutorial" },
+  { id: 1, label: "UNIT 1", unitlabel: "Right triangles & trigonometry", link: "/courses/maths/algebra/unit1" },
+  { id: 2, label: "UNIT 2", unitlabel: "Trigonometric functions ", link: "/courses/maths/algebra/unit2" },
+  { id: 3, label: "UNIT 3", unitlabel: "Non-right triangles & trigonometry", link: "/courses/maths/algebra/unit3" },
+  { id: 4, label: "UNIT 4", unitlabel: "Trigonometric equations & identities", link: "/courses/maths/algebra/unit4" },
+  { id: 5, label: "UNIT 5", unitlabel: "Inverse trigonometric functions", link: "/courses/maths/algebra/unit5" },
+  { id: 6, label: "UNIT 6", unitlabel: "Using trigonometric identities", link: "/courses/maths/algebra/unit6" },
 ];
 
 const Side: React.FC = () => {

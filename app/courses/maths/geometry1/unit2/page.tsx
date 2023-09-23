@@ -1,11 +1,11 @@
 import React from 'react'
-import Sidebar from '@/components/coursesUnits/math/algebra/unit'
+import Side from '@/components/coursesUnits/math/geometry/unit2'
 
 type Props = {}
 
 const page = (props: Props) => {
   return (
-    <div><Sidebar/></div>
+    <div><Side/></div>
   )
 }
 

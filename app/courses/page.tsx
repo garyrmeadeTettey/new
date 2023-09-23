@@ -5,7 +5,7 @@ import  MathCourse from '../../components/courses/math/math'
 import Technology from '@/components/courses/technology/technology'
 import ScienceCourses from '@/components/courses/science/science'
 import LifeSkillCourses from '@/components/courses/lifeskills/lifeskills'
-import PersonalDev from '@/components/courses/personalDev/personalDev'
+import PersonalDev from '@/components/courses/personalDev/personal'
 
 
 

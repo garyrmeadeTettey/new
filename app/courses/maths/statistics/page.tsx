@@ -1,5 +1,5 @@
 import React from 'react'
-import Sidebar from '@/components/coursesUnits/math/algebra/unit'
+import Sidebar from '@/components/coursesUnits/math/statistics/unit4'
 
 type Props = {}
 

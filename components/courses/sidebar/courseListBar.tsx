@@ -39,22 +39,22 @@ const CourseToggle = () => {
     <AccordionTrigger className="w-full text-xl text-center hover:bg-gray-300-600 dark:hover:bg-gray-900 py-3 pl-3 ml-3 pr-3 border-b-3 border-white">Science</AccordionTrigger>
     <AccordionContent>
         <Link href="/courses/personalDev/stress">
-          <button className="w-full text-xl hover:bg-gray-300-600 dark:hover:bg-gray-900 py-3 ml-10 border-b-2 border-white">Stress Management</button>
+          <button className="w-full text-xl hover:bg-gray-300-600 dark:hover:bg-gray-900 py-3 ml-10 border-b-2 border-white">Electromagnotism</button>
         </Link>
     </AccordionContent>
     <AccordionContent>
       <Link href="/courses/personalDev/eq">
-        <button className="w-full text-xl hover:bg-gray-300-600 dark:hover:bg-gray-900 py-3 ml-10 border-b-2 border-white">Emotional Intelligence</button>
+        <button className="w-full text-xl hover:bg-gray-300-600 dark:hover:bg-gray-900 py-3 ml-10 border-b-2 border-white">Chemistry</button>
       </Link>
     </AccordionContent>
     <AccordionContent>
       <Link href="/courses/personalDev/critical">
-        <button className="w-full text-xl hover:bg-gray-300-600 dark:hover:bg-gray-900 p-3 ml-10 border-b-2 border-white">Critical Thinking</button>
+        <button className="w-full text-xl hover:bg-gray-300-600 dark:hover:bg-gray-900 p-3 ml-10 border-b-2 border-white">Physics</button>
       </Link>
     </AccordionContent>
     <AccordionContent>
       <Link href="/courses/personalDev/mindful">
-        <button className="w-full text-xl hover:bg-gray-300-600 dark:hover:bg-gray-900 py-3 ml-10 border-b-2 border-white">Mindfullness</button>
+        <button className="w-full text-xl hover:bg-gray-300-600 dark:hover:bg-gray-900 py-3 ml-10 border-b-2 border-white">Optics</button>
     </Link>
     </AccordionContent>
   </AccordionItem>
@@ -66,22 +66,22 @@ const CourseToggle = () => {
     <AccordionTrigger className="w-full text-xl text-center hover:bg-gray-300-600 dark:hover:bg-gray-900 py-3 pl-3 ml-3 pr-3 border-b-3 border-white">Technology</AccordionTrigger>
     <AccordionContent>
         <Link href="/courses/personalDev/stress">
-          <button className="w-full text-xl hover:bg-gray-300-600 dark:hover:bg-gray-900 py-3 ml-10 border-b-2 border-white">Stress Management</button>
+          <button className="w-full text-xl hover:bg-gray-300-600 dark:hover:bg-gray-900 py-3 ml-10 border-b-2 border-white">Artificial Intelligence</button>
         </Link>
     </AccordionContent>
     <AccordionContent>
       <Link href="/courses/personalDev/eq">
-        <button className="w-full text-xl hover:bg-gray-300-600 dark:hover:bg-gray-900 py-3 ml-10 border-b-2 border-white">Emotional Intelligence</button>
+        <button className="w-full text-xl hover:bg-gray-300-600 dark:hover:bg-gray-900 py-3 ml-10 border-b-2 border-white">Internet of Things</button>
       </Link>
     </AccordionContent>
     <AccordionContent>
       <Link href="/courses/personalDev/critical">
-        <button className="w-full text-xl hover:bg-gray-300-600 dark:hover:bg-gray-900 p-3 ml-10 border-b-2 border-white">Critical Thinking</button>
+        <button className="w-full text-xl hover:bg-gray-300-600 dark:hover:bg-gray-900 p-3 ml-10 border-b-2 border-white">Programming</button>
       </Link>
     </AccordionContent>
     <AccordionContent>
       <Link href="/courses/personalDev/mindful">
-        <button className="w-full text-xl hover:bg-gray-300-600 dark:hover:bg-gray-900 py-3 ml-10 border-b-2 border-white">Mindfullness</button>
+        <button className="w-full text-xl hover:bg-gray-300-600 dark:hover:bg-gray-900 py-3 ml-10 border-b-2 border-white">Internet</button>
     </Link>
     </AccordionContent>
   </AccordionItem>

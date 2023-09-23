@@ -5,7 +5,7 @@ import { Card, CardTitle } from '@/components/ui/card';
 
 type Props = {}
 
-const personalDev = (props: Props) => {
+const Personal = (props: Props) => {
   return (
     <Card className='dark:bg-gray-950'>
         <CardTitle className="text-2xl font-bold text-center py-2">Personal Development Courses</CardTitle>
@@ -218,4 +218,4 @@ const personalDev = (props: Props) => {
   )
 }
 
-export default personalDev
+export default Personal

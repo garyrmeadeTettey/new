@@ -5,6 +5,7 @@ import { Inter } from 'next/font/google'
 import { dark } from '@clerk/themes';
 import Providers from '@/components/Providers';
 import Navbar from '@/components/Navbar';
+import { Mainside } from '@/components/mainside';
 import { cn } from '@/lib/utils';
 
 const inter = Inter({ subsets: ['latin'] })
@@ -29,7 +30,11 @@ export default function RootLayout({
       <body className={cn(inter.className, "antialiased min-h-screen pt-16")}>
       <Providers>
         <Navbar/>
+        <div className="flex">
+
+        <Mainside />
         {children}
+        </div>
       </Providers>
       </body>
     </html>

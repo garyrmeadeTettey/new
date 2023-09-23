@@ -1,5 +1,5 @@
 import React from 'react'
-import PersonalDevCourses from '@/components/courses/personalDev/personalDev'
+import PersonalDevCourses from '@/components/courses/personalDev/personal'
 
 type Props = {}
 
