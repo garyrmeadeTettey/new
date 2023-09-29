@@ -25,9 +25,9 @@ export default async function Home() {
         </CardHeader>
         <CardContent>
           {isAuth ? (
-            <Link href="/homepage">
+            <Link href="/dash">
               <Button> {/* Style the button */}
-                Go to Homepage
+                Go to Dashboard page
               </Button>
             </Link>
           ) : (

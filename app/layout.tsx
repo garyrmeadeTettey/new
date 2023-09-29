@@ -30,10 +30,11 @@ export default function RootLayout({
       <body className={cn(inter.className, "antialiased min-h-screen pt-16")}>
       <Providers>
         <Navbar/>
-        <div className="flex">
 
-        <Mainside />
+        {/* <Mainside /> */}
+        <div className="">
         {children}
+      
         </div>
       </Providers>
       </body>

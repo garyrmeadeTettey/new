@@ -8,9 +8,11 @@ import { columns } from "./components/columns"
 import { DataTable } from "./components/datatable"
 import { UserNav } from "./components/user-nav"
 import { taskSchema } from "./data/schema"
+import { Mainside } from '@/components/mainside';
+
 
 export const metadata: Metadata = {
-  title: "Tasks",
+  title: "Better Man | Tasks",
   description: "A task and issue tracker build using Tanstack Table.",
 }
 
@@ -30,6 +32,8 @@ export default async function TaskPage() {
 
   return (
     <>
+    <div className="flex">
+      <Mainside />
       <div className="md:hidden">
         <Image
           src="/examples/tasks-light.png"
@@ -51,7 +55,7 @@ export default async function TaskPage() {
           <div>
             <h2 className="text-2xl font-bold tracking-tight">Welcome back!</h2>
             <p className="text-muted-foreground">
-              Here&apos;s a list of your tasks for this month!
+              Here&apos;s a list of User Actions!
             </p>
           </div>
           <div className="flex items-center space-x-2">
@@ -59,6 +63,7 @@ export default async function TaskPage() {
           </div>
         </div>
         <DataTable data={tasks} columns={columns} />
+      </div>
       </div>
     </>
   )

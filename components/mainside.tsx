@@ -1,6 +1,16 @@
 import { cn } from "@/lib/utils"
 import { Button } from "@/components/ui/button"
 import { ScrollArea } from "@/components/ui/scroll-area"
+import Link from 'next/link';
+import { Card } from "@/components/ui/card";
+import { useState, useEffect } from 'react';
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion"
+// import { Link } from "lucide-react"
 
 export function Mainside({ className, playlists }: SidebarProps) {
     return (
@@ -11,7 +21,57 @@ export function Mainside({ className, playlists }: SidebarProps) {
               Discover
             </h2>
             <div className="space-y-1">
-              <Button variant="secondary" className="w-full justify-start">
+            <Accordion type="single" collapsible>
+  <AccordionItem value="item-1">
+    <AccordionTrigger className="w-full text-xl text-center hover:bg-gray-400 dark:hover:bg-gray-900 py-3 pl-3 ml-3 pr-3 border-b-3 mb-2 rounded-md border-white">
+    <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  className="mr-2 h-4 w-4"
+                >
+                  <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2" />
+                  <circle cx="12" cy="7" r="4" />
+                </svg>
+                Users
+      </AccordionTrigger>
+    <AccordionContent>
+        {/* <Link href="/courses/personalDev/stress">
+          <button className="w-full text-xl hover:bg-gray-300-600 dark:hover:bg-gray-900 py-3 ml-10 border-b-2 border-white">Electromagnotism</button>
+        </Link> */}
+        <button className="w-full text-md text-center hover:bg-gray-300 dark:hover:bg-gray-900 py-3 pl-3 ml-3 pr-3 border-b-3 rounded-md border-white">
+        Access User Tables
+
+        </button>
+
+
+
+    </AccordionContent>
+    {/* <AccordionContent>
+      <Link href="/courses/personalDev/eq">
+        <button className="w-full text-xl hover:bg-gray-300-600 dark:hover:bg-gray-900 py-3 ml-10 border-b-2 border-white">Chemistry</button>
+      </Link>
+    </AccordionContent> */}
+    {/* <AccordionContent>
+      <Link href="/courses/personalDev/critical">
+        <button className="w-full text-xl hover:bg-gray-300-600 dark:hover:bg-gray-900 p-3 ml-10 border-b-2 border-white">Physics</button>
+      </Link>
+    </AccordionContent> */}
+    {/* <AccordionContent>
+      <Link href="/courses/personalDev/mindful">
+        <button className="w-full text-xl hover:bg-gray-300-600 dark:hover:bg-gray-900 py-3 ml-10 border-b-2 border-white">Optics</button>
+    </Link>
+    </AccordionContent> */}
+  </AccordionItem>
+</Accordion>
+
+
+                {/* <Link href="/tasks">
+              <Button variant="secondary" className="w-full justify-start text-xl hover:bg-gray-300-600 dark:hover:bg-gray-900 py-3 pl-3 ml-3 pr-3 border-b-3 border-white">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
@@ -27,7 +87,9 @@ export function Mainside({ className, playlists }: SidebarProps) {
                 </svg>
                 Users
               </Button>
-              <Button variant="ghost" className="w-full justify-start">
+                </Link> */}
+                {/* <Link href="/courses">
+              <Button variant="ghost" className="w-full text-xl text-center hover:bg-gray-300-600 dark:hover:bg-gray-900 py-3 pl-3 ml-3 pr-3 border-b-3 border-white">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
@@ -45,8 +107,11 @@ export function Mainside({ className, playlists }: SidebarProps) {
                 </svg>
                 Courses
               </Button>
-              <Button variant="ghost" className="w-full justify-start">
-                <svg
+                </Link> */}
+                <Accordion type="single" collapsible>
+  <AccordionItem value="item-1">
+    <AccordionTrigger className="w-full text-xl text-center hover:bg-gray-300-600 dark:hover:bg-gray-900 py-3 pl-3 ml-3 pr-3 border-b-3 border-white">
+    <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
                   fill="none"
@@ -56,17 +121,187 @@ export function Mainside({ className, playlists }: SidebarProps) {
                   strokeLinejoin="round"
                   className="mr-2 h-4 w-4"
                 >
-                  <path d="M4.9 19.1C1 15.2 1 8.8 4.9 4.9" />
-                  <path d="M7.8 16.2c-2.3-2.3-2.3-6.1 0-8.5" />
-                  <circle cx="12" cy="12" r="2" />
-                  <path d="M16.2 7.8c2.3 2.3 2.3 6.1 0 8.5" />
-                  <path d="M19.1 4.9C23 8.8 23 15.1 19.1 19" />
+                  <rect width="7" height="7" x="3" y="3" rx="1" />
+                  <rect width="7" height="7" x="14" y="3" rx="1" />
+                  <rect width="7" height="7" x="14" y="14" rx="1" />
+                  <rect width="7" height="7" x="3" y="14" rx="1" />
                 </svg>
-                Radio
-              </Button>
+                Courses
+      </AccordionTrigger>
+    <AccordionContent>
+        {/* <Link href="/courses/personalDev/stress">
+          <button className="w-full text-xl hover:bg-gray-300-600 dark:hover:bg-gray-900 py-3 ml-10 border-b-2 border-white">Electromagnotism</button>
+        </Link> */}
+        <Accordion type="single" collapsible>
+  <AccordionItem value="item-1">
+    <AccordionTrigger className="w-full text-xl text-center hover:bg-gray-300-600 dark:hover:bg-gray-900 py-3 pl-3 ml-3 pr-3 border-b-3 border-white">Science</AccordionTrigger>
+    <AccordionContent  className="pr-3">
+        <Link href="/courses/personalDev/stress">
+          <button className="w-full text-md text-center hover:bg-gray-300 dark:hover:bg-gray-900 py-3 pl-3 ml-3 pr-3 mr-3 border-b-3 rounded-md border-white">
+        Access User Tables
+
+        </button>
+        </Link>
+    </AccordionContent>
+    <AccordionContent  className="pr-3">
+      <Link href="/courses/personalDev/eq">
+        <button className="text-md w-full text-center hover:bg-gray-300 dark:hover:bg-gray-900 py-3 pl-3 ml-3 pr-3 mr-3 border-b-3 rounded-md border-white">
+        Access User Tablesjvuhv,ihvk
+
+        </button>
+      </Link>
+    </AccordionContent>
+    <AccordionContent className="pr-3">
+      <Link href="/courses/personalDev/critical">
+        <button className="text-md w-full text-center hover:bg-gray-300 dark:hover:bg-gray-900 py-3 pl-3 ml-3 pr-3 mr-3 border-b-3 rounded-md border-white">
+        Access User Tablesjvuhv,ihvk
+
+        </button>
+      </Link>
+    </AccordionContent>
+    <AccordionContent  className="pr-3">
+      <Link href="/courses/personalDev/mindful">
+        <button className="w-full text-md text-center hover:bg-gray-300 dark:hover:bg-gray-900 py-3 pl-3 ml-3 pr-3 mr-3 border-b-3 rounded-md border-white">
+        Access User Tables
+
+        </button>
+    </Link>
+    </AccordionContent>
+  </AccordionItem>
+</Accordion>
+<Accordion type="single" collapsible>
+  <AccordionItem value="item-1">
+    <AccordionTrigger className="w-full text-xl text-center hover:bg-gray-300-600 dark:hover:bg-gray-900 py-3 pl-3 ml-3 pr-3 border-b-3 border-white">Technology</AccordionTrigger>
+    <AccordionContent>
+        <Link href="/courses/personalDev/stress">
+          <button className="w-full text-md text-center hover:bg-gray-300 dark:hover:bg-gray-900 py-3 pl-3 ml-3 pr-3 border-b-3 rounded-md border-white">
+        Access User Tables
+
+        </button>
+        </Link>
+    </AccordionContent>
+    <AccordionContent>
+      <Link href="/courses/personalDev/eq">
+        <button className="w-full text-md text-center hover:bg-gray-300 dark:hover:bg-gray-900 py-3 pl-3 ml-3 pr-3 border-b-3 rounded-md border-white">
+        Access User Tables
+
+        </button>
+      </Link>
+    </AccordionContent>
+    <AccordionContent>
+      <Link href="/courses/personalDev/critical">
+       <button className="w-full text-md text-center hover:bg-gray-300 dark:hover:bg-gray-900 py-3 pl-3 ml-3 pr-3 border-b-3 rounded-md border-white">
+        Access User Tables
+
+        </button>
+      </Link>
+    </AccordionContent>
+    <AccordionContent>
+      <Link href="/courses/personalDev/mindful">
+        <button className="w-full text-md text-center hover:bg-gray-300 dark:hover:bg-gray-900 py-3 pl-3 ml-3 pr-3 border-b-3 rounded-md border-white">
+        Access User Tables
+
+        </button>
+    </Link>
+    </AccordionContent>
+  </AccordionItem>
+</Accordion>
+<Accordion type="single" collapsible>
+  <AccordionItem value="item-1">
+    <AccordionTrigger className="w-full text-xl text-center hover:bg-gray-300-600 dark:hover:bg-gray-900 py-3 pl-3 ml-3 pr-3 border-b-3 border-white">Engineering</AccordionTrigger>
+    <AccordionContent>
+        <Link href="/courses/personalDev/stress">
+          <button className="w-full text-md text-center hover:bg-gray-300 dark:hover:bg-gray-900 py-3 pl-3 ml-3 pr-3 border-b-3 rounded-md border-white">
+        Access User Tables
+
+        </button>
+        </Link>
+    </AccordionContent>
+    <AccordionContent>
+      <Link href="/courses/personalDev/eq">
+        <button className="w-full text-md text-center hover:bg-gray-300 dark:hover:bg-gray-900 py-3 pl-3 ml-3 pr-3 border-b-3 rounded-md border-white">
+        Access User Tables
+
+        </button>
+      </Link>
+    </AccordionContent>
+    <AccordionContent>
+      <Link href="/courses/personalDev/critical">
+        <button className="w-full text-md text-center hover:bg-gray-300 dark:hover:bg-gray-900 py-3 pl-3 ml-3 pr-3 border-b-3 rounded-md border-white">
+        Access User Tables
+
+        </button>
+      </Link>
+    </AccordionContent>
+    <AccordionContent>
+      <Link href="/courses/personalDev/mindful">
+        <button className="w-full text-md text-center hover:bg-gray-300 dark:hover:bg-gray-900 py-3 pl-3 ml-3 pr-3 border-b-3 rounded-md border-white">
+        Access User Tables
+
+        </button>
+    </Link>
+    </AccordionContent>
+  </AccordionItem>
+</Accordion>
+<Accordion type="single" collapsible>
+  <AccordionItem value="item-1">
+    <AccordionTrigger className="w-full text-xl text-center hover:bg-gray-300-600 dark:hover:bg-gray-900 py-3 pl-3 ml-3 pr-3 border-b-3 border-white">Mathematics</AccordionTrigger>
+    <AccordionContent>
+        <Link href="/courses/personalDev/stress">
+          <button className="w-full text-md text-center hover:bg-gray-300 dark:hover:bg-gray-900 py-3 pl-3 ml-3 pr-3 border-b-3 rounded-md border-white">
+        Access User Tables
+
+        </button>
+        </Link>
+    </AccordionContent>
+    <AccordionContent>
+      <Link href="/courses/personalDev/eq">
+        <button className="w-full text-md text-center hover:bg-gray-300 dark:hover:bg-gray-900 py-3 pl-3 ml-3 pr-3 border-b-3 rounded-md border-white">
+        Access User Tables
+
+        </button>
+      </Link>
+    </AccordionContent>
+    <AccordionContent>
+      <Link href="/courses/personalDev/critical">
+        <button className="w-full text-md text-center hover:bg-gray-300 dark:hover:bg-gray-900 py-3 pl-3 ml-3 pr-3 border-b-3 rounded-md border-white">
+        Access User Tables
+
+        </button>
+      </Link>
+    </AccordionContent>
+    <AccordionContent>
+      <Link href="/courses/personalDev/mindful">
+        <button className="w-full text-md text-center hover:bg-gray-300 dark:hover:bg-gray-900 py-3 pl-3 ml-3 pr-3 border-b-3 rounded-md border-white">
+        Access User Tables
+
+        </button>
+    </Link>
+    </AccordionContent>
+  </AccordionItem>
+</Accordion>
+    </AccordionContent>
+    {/* <AccordionContent>
+      <Link href="/courses/personalDev/eq">
+        <button className="w-full text-xl hover:bg-gray-300-600 dark:hover:bg-gray-900 py-3 ml-10 border-b-2 border-white">Chemistry</button>
+      </Link>
+    </AccordionContent> */}
+    {/* <AccordionContent>
+      <Link href="/courses/personalDev/critical">
+        <button className="w-full text-xl hover:bg-gray-300-600 dark:hover:bg-gray-900 p-3 ml-10 border-b-2 border-white">Physics</button>
+      </Link>
+    </AccordionContent> */}
+    {/* <AccordionContent>
+      <Link href="/courses/personalDev/mindful">
+        <button className="w-full text-xl hover:bg-gray-300-600 dark:hover:bg-gray-900 py-3 ml-10 border-b-2 border-white">Optics</button>
+    </Link>
+    </AccordionContent> */}
+  </AccordionItem>
+</Accordion>
+
             </div>
           </div>
-          <div className="px-3 py-2">
+          {/* <div className="px-3 py-2">
             <h2 className="mb-2 px-4 text-lg font-semibold tracking-tight">
               Library
             </h2>
@@ -157,9 +392,9 @@ export function Mainside({ className, playlists }: SidebarProps) {
                 Albums
               </Button>
             </div>
-          </div>
+          </div> */}
           <div className="py-2">
-            <h2 className="relative px-7 text-lg font-semibold tracking-tight">
+            {/* <h2 className="relative px-7 text-lg font-semibold tracking-tight">
               Playlists
             </h2>
             <ScrollArea className="h-[300px] px-1">
@@ -190,7 +425,7 @@ export function Mainside({ className, playlists }: SidebarProps) {
                   </Button>
                 ))}
               </div>
-            </ScrollArea>
+            </ScrollArea> */}
           </div>
         </div>
       </div>

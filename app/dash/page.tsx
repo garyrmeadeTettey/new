@@ -5,6 +5,8 @@ import UserNav from './components/user-nav'
 import { Recentsales } from './components/staff'
 import Search from './components/search'
 import Mainnav from './components/main-nav'
+import { Mainside } from '@/components/mainside';
+
 import Image from "next/image"
 
 import { Button } from "@/components/ui/button";
@@ -23,10 +25,17 @@ import {
 } from "@/components/ui/tabs"
 import { Date } from './components/date-range-picker'
 
+export const metadata = {
+  title: 'BetterMan | Dashboard',
+  description: 'Quiz yourself on anything!',
+};
+
 
 const page = () => {
   return (
     <>
+    <div className="flex">
+    <Mainside />
     <div className="md:hidden">
       <Image
         src="/examples/dashboard-light.png"
@@ -78,7 +87,7 @@ const page = () => {
           <TabsContent value="overview" className="space-y-4">
           <h2 className="text-3xl font-bold tracking-tight">Overview</h2>
             <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
-              <Card>
+              <Card className='dark:border-white border-2'>
                 <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
                   <CardTitle className="text-sm font-medium">
                     Total Time Spent Learning
@@ -130,7 +139,7 @@ const page = () => {
                   </p>
                 </CardContent>
               </Card>
-              <Card>
+              <Card className="dark:border-white border-2">
                 <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
                   <CardTitle className="text-sm font-medium">Sales</CardTitle>
                   <svg
@@ -154,7 +163,7 @@ const page = () => {
                   </p>
                 </CardContent>
               </Card>
-              <Card>
+              <Card className="dark:border-white border-2">
                 <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
                   <CardTitle className="text-sm font-medium">
                     Active Now
@@ -484,6 +493,7 @@ const page = () => {
         </Tabs>
       </div>
     </div>
+  </div>
   </>
     )
   }

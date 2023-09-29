@@ -11,43 +11,43 @@ import {
   
   export const labels = [
     {
-      value: "bug",
+      value: "Technology",
       label: "Bug",
     },
     {
-      value: "feature",
+      value: "Mathematics",
       label: "Feature",
     },
     {
-      value: "documentation",
+      value: "Science",
       label: "Documentation",
     },
   ]
   
   export const statuses = [
     {
-      value: "backlog",
-      label: "Backlog",
-      icon: QuestionMarkCircledIcon,
-    },
-    {
-      value: "todo",
-      label: "Todo",
+      value: "Science",
+      label: "Science",
       icon: CircleIcon,
     },
     {
-      value: "in progress",
-      label: "In Progress",
+      value: "Technology",
+      label: "Technology",
       icon: StopwatchIcon,
     },
     {
-      value: "done",
-      label: "Done",
+      value: "Engineering",
+      label: "Engineering",
+      icon: QuestionMarkCircledIcon,
+    },
+    {
+      value: "Mathematics",
+      label: "Mathematics",
       icon: CheckCircledIcon,
     },
     {
-      value: "canceled",
-      label: "Canceled",
+      value: "Personal Development",
+      label: "Personal Development",
       icon: CrossCircledIcon,
     },
   ]

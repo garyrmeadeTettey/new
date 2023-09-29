@@ -190,21 +190,6 @@ const CourseToggle = () => {
   </AccordionItem>
 </Accordion>
     </div>
-    {showButtons ? (
-        <div className="flex flex-col space-y-2">
-          <Link href="/courses">
-            <button className="btnhead hover:bg-gray-300-600 dark:hover:bg-gray-900 p-2">Engineering</button>
-          </Link>
-          {/* Add other course buttons here */}
-        </div>
-      ) : (
-        <button
-          onClick={() => setShowButtons(true)}
-          className="btnhead hover:bg-gray-300-600 dark:hover:bg-gray-900 p-2"
-        >
-          S
-        </button>
-      )}
     </div>
     
 
